@@ -77,6 +77,7 @@ const CrowdFundingContainer = styled.div `
       .c-bottom-content{
         height: 0.2rem;
         padding: 0rem 0.15rem 0.08rem 0.15rem;
+        display: flex;
         span{
           font-size: 0.12rem;
         }
@@ -86,15 +87,15 @@ const CrowdFundingContainer = styled.div `
         & span:nth-child(2){
           color: rgb(153, 153, 153);
         }
-        & span:nth-child(3){
+        /* & span:nth-child(3){
          width: 0.14rem;
          height: 0.11rem;
          display: inline-block;
          color:#fff;
          margin-left:0.06rem;
          padding: 0 0.01rem;
-        }
-        & span:nth-child(4){
+        } */
+        & span:nth-child(3){
           color:rgb(182, 9, 9);
           float:right;
         }
@@ -102,7 +103,11 @@ const CrowdFundingContainer = styled.div `
       }
       .c-bottom-color{
         height:0.04rem;
-        background-image: linear-gradient(to right, rgb(249, 196, 6), rgb(243, 117, 17));
+        background-color: rgb(225, 225, 225);
+        .c-color{
+          height:0.04rem;
+          background-image: linear-gradient(to right, rgb(249, 196, 6), rgb(243, 117, 17));
+        }
       }
     }
   }
@@ -177,7 +182,11 @@ const CrowdFundingContainer = styled.div `
       }
       .c-bottom-color{
         height:0.04rem;
-        background-image: linear-gradient(to right, rgb(249, 196, 6), rgb(243, 117, 17));
+        background-color: rgb(225, 225, 225);
+        .c-color{
+          height:0.04rem;
+          background-image: linear-gradient(to right, rgb(249, 196, 6), rgb(243, 117, 17));
+        }
       }
       }
     }

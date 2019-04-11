@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   height: 0.38rem;
+  width:100%;
   background: #fff;
   display: flex;
   .logo{

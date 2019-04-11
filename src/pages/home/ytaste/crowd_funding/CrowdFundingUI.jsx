@@ -29,23 +29,34 @@ export default props => {
             <div className='c-item-bottom'>
               <div className='c-bottom-content'>
               <span> { props.crowdData.data.items[0].item.saled_count } </span>
-              <span> /&nbsp;{ props.crowdData.data.items[0].item.target_count }人支持 </span>
+              <span> 人支持 </span>
               {
-                props.crowdData.data.items[0].item.tags.map(val => {
-                  return(
-                    <span
-                    key={val.name}
-                    style={
-                      {background:val.color}
-                    }
-                    >{val.name}</span>
-                  )
-                }) 
+                props.crowdData.data.items[0].item.tags ? (
+                  props.crowdData.data.items[0].item.tags.map(val => {
+                      return(
+                        <span
+                        key={val.name}
+                        style={
+                          {background:val.color}
+                        }
+                        >{val.name}</span>
+                      )
+                    }) 
+                ):
+                (null)
               }
-              
               <span> { props.crowdData.data.items[0].item.progress } %</span>
               </div>
-              <div className='c-bottom-color'></div>
+              <div className='c-bottom-color'>
+                <div 
+                className='c-color'
+                style={{
+                  width:props.crowdData.data.items[0].item.progress > 100 ?
+                    100 + '%' : props.crowdData.data.items[0].item.progress
+                    + '%' 
+                }}
+                ></div>
+              </div>
             </div>
           </div>
           <div className='c-item-container'>
@@ -67,7 +78,7 @@ export default props => {
                 </div>
                 <div className='c-bottom'>
                   <div className='c-bottom-text'>
-                    <span> { val.item.target_count }人支持 </span>
+                    <span> { val.item.saled_count }人支持 </span>
                     {
                       val.item.tags.map(value => {
                         return(
@@ -81,9 +92,18 @@ export default props => {
                       }) 
                     }
                     
-                    <span> { props.crowdData.data.items[0].item.progress } %</span>
+                    <span> { val.item.progress } %</span>
                   </div>
-                  <div className='c-bottom-color'></div>
+                  <div className='c-bottom-color'>
+                  <div 
+                  className='c-color'
+                  style={{
+                    width:val.item.progress > 100 ?
+                      100 +"%" : val.item.progress
+                      + '%' 
+                  }}
+                  ></div>
+                  </div>
                 </div>
               </div>
               )

@@ -25,7 +25,7 @@ class Swiper extends Component {
   }
   
   render() {
-    let filteredBanner =  this.props.homepage[0] || [] 
+    let filteredBanner =  this.props.homepage.find(item => (item.module_key === 'banner')) || [] 
     return ( 
       <SwiperUI banner={ filteredBanner.data || [] } />
      )

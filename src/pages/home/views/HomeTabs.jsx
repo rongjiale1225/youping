@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { TabBar } from 'antd-mobile'
 
 import Ytaste from '../ytaste/Ytaste'
+import CateGory from 'pages/home/category/views/CateGory'
 
 
 import tabBar from 'assets/images/tab-bar.png'
@@ -12,7 +13,7 @@ class HomeTabs extends Component {
   constructor(props) {
     super(props)
     this.state = { 
-      selectedTab: 'home',
+      selectedTab: 'redTab',
       hidden: false,
       fullScreen: false,
      }
@@ -79,7 +80,7 @@ class HomeTabs extends Component {
             }}
             data-seed="logId1"
           >
-            <div>koubei</div>
+            <CateGory />
           </TabBar.Item>
           <TabBar.Item
             icon={

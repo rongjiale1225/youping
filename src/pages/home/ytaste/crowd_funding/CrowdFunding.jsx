@@ -10,8 +10,9 @@ const mapState = state => ({
 
 class CrowdFunding extends Component{
   render(){
+    let crowdFunding = this.props.homepage.find(item => (item.module_key === 'crowd_funding'))
     return(
-      <CrowdFundingUI crowdData={this.props.homepage[3] || []}></CrowdFundingUI>
+      <CrowdFundingUI crowdData={crowdFunding || []}></CrowdFundingUI>
     )
   }
 }
