@@ -35,5 +35,5 @@
     "http-proxy-middleware": "^0.19.1",
     "react-app-rewired": "^2.1.1"
   },
-  "proxy": "https://app.xiaomiyoupin.com"
+  "proxy": "https://webapi.qingting.fm"
 }

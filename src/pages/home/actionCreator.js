@@ -4,10 +4,12 @@ import {
   GET_HOMEPAGE
 } from './actionTypes'
 
-export const getHomepageSync = homepage => ({
-  type: GET_HOMEPAGE,
-  homepage
-})
+export const getHomepageSync = homepage => {
+  return({
+    type: GET_HOMEPAGE,
+    homepage
+  })
+}
 
 export const getHomepageAsync = () => {
   return async dispatch => {

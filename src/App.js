@@ -1,11 +1,33 @@
 import React, { Component } from 'react';
 
 import Home from 'pages/home/views/Home'
+import CateGoryPage from 'pages/categories/views/CateGoryPage'
+import Play from 'pages/play/views/Play'
+
+import { Provider } from 'react-redux'
+
+import store from './store/'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
-      <Home></Home>
+      <Provider store={store}>
+        <Router>
+          <Switch>
+            <Redirect exact from="/" to="/home" />
+            <Route path='/home' component={Home}/>
+            <Route exact path='/category' component={CateGoryPage} key={ new Date().getTime() }/>
+            <Route path='/play' component={Play}/>
+          </Switch>
+        </Router>
+      </Provider>
     );
   }
 }
