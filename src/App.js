@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 
 import Home from 'pages/home/views/Home'
@@ -33,3 +34,23 @@ class App extends Component {
 }
 
 export default App;
+=======
+import React, { Component } from 'react';
+
+import Home from 'pages/home/views/Home'
+
+import store from './store/'
+
+import { Provider } from 'react-redux'
+
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+          <Home></Home>
+      </Provider>
+    )
+  }
+}
+>>>>>>> bf2addf4826ee14591362b5ed21547115ca91a2a

@@ -1,0 +1,23 @@
+{
+  "data":[
+    {"ucid": 446, "name": "有品推荐", "pic_id": 173599, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 115, "name": "家用电器", "pic_id": 173598, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 116, "name": "智能家庭", "pic_id": 168877, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 1038, "name": "家具家装", "pic_id": 168879, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 88, "name": "居家餐厨", "pic_id": 168880, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 90, "name": "电视影音", "pic_id": 168878, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 1050, "name": "运动户外", "pic_id": 173271, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 91, "name": "日用文创", "pic_id": 168888, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 93, "name": "服装配饰", "pic_id": 173872, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 335, "name": "鞋靴箱包", "pic_id": 168887, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 341, "name": "洗护美妆", "pic_id": 168890, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 579, "name": "手机电脑", "pic_id": 168884, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 89, "name": "数码配件", "pic_id": 173597, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 114, "name": "出行车品", "pic_id": 168882, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 310, "name": "饮食酒水", "pic_id": 173812, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 389, "name": "医疗健康", "pic_id": 172765, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 155, "name": "母婴亲子", "pic_id": 172771, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0},
+    {"ucid": 1077, "name": "宠物生活", "pic_id": 168893, "summary": "", "content_id": 0, "shownum": 3, "ctime": 0},
+    {"ucid": 83, "name": "品牌", "pic_id": 0, "summary": "", "content_id": 0, "shownum": 10, "ctime": 0, "parent_id": 79}
+  ]
+}

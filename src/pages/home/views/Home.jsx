@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react'
 
 import {connect} from 'react-redux'
@@ -62,3 +63,22 @@ class Home extends Component {
 }
  
 export default connect(mapState,mapDispatch)(Home)
+=======
+import React, { Component } from 'react'
+
+import { Homecontainer } from './Homestyled'
+
+import HomeTabs from './HomeTabs'
+
+class Home extends Component {
+  render() { 
+    return ( 
+      <Homecontainer>
+        <HomeTabs></HomeTabs>
+      </Homecontainer>
+     )
+  }
+}
+ 
+export default Home;
+>>>>>>> bf2addf4826ee14591362b5ed21547115ca91a2a
